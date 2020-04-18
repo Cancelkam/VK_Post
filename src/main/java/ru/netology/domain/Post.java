@@ -152,6 +152,18 @@ public class Post {
         this.postponedId = postponedId;
     }
 
+    private boolean markedAsAds;
+    private boolean isFavorite;
+    private int postponedId;
+    private CommentsInfo commentsInfo;
+    private Likesinfo likesinfo;
+    private ReportsInfo reportsinfo;
+    private ViewsInfo viewsInfo;
+    private PostSourceInfo postSourceInfo;
+    private Geo geo;
+
+
+
     public CommentsInfo getCommentsInfo() {
         return commentsInfo;
     }
@@ -199,15 +211,4 @@ public class Post {
     public void setGeo(Geo geo) {
         this.geo = geo;
     }
-
-    private boolean markedAsAds;
-    private boolean isFavorite;
-    private int postponedId;
-    private CommentsInfo commentsInfo;
-    private Likesinfo likesinfo;
-    private ReportsInfo reportsinfo;
-    private ViewsInfo viewsInfo;
-    private PostSourceInfo postSourceInfo;
-    private Geo geo;
-
 }
